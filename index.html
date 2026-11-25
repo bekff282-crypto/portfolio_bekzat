@@ -16,8 +16,8 @@
       <a href="#works">Работы</a>
       <a href="#blender">Blender</a>
       <a href="#figma">Figma</a>
+      <a href="#previous-site">Мои сайты</a>
       <a href="#skills">Навыки</a>
-      <a href="#contact">Связаться</a>
     </nav>
     <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">☀</button>
   </header>
@@ -89,17 +89,39 @@
     <section class="section" id="blender">
       <div class="section-heading"><p class="eyebrow">03 / 3D-МОДЕЛИРОВАНИЕ</p><h2>Мои работы в <span>Blender</span></h2><p>Здесь будут размещены изображения твоих собственных 3D-моделей.</p></div>
       <div class="project-grid">
-        <article class="project-card"><div class="placeholder-art">3D</div><div class="project-body"><span class="pill">Blender</span><h3>Пластиковая бутылка для воды</h3><p>Учебная модель пластиковой бутылки. При создании можно использовать Mesh, Extrude, Inset, Bevel и материалы.</p><p class="muted">Добавь свой рендер в assets/blender/bottle.png</p></div></article>
+        <article class="project-card"><img class="project-image" src="assets/blender/bottle.png" alt="Пластиковая бутылка, созданная в Blender"><div class="project-body"><span class="pill">Blender</span><h3>Пластиковая бутылка для воды</h3><p>Учебная модель пластиковой бутылки. При создании можно использовать Mesh, Extrude, Inset, Bevel и материалы.</p><p class="muted">Модель пластиковой бутылки с синей крышкой и прозрачным пластиковым материалом.</p><p class="muted">Использованы: Mesh, Extrude, Bevel и настройка материала Plastic.</p></div></article>
       </div>
     </section>
 
     <section class="section" id="figma">
-      <div class="section-heading"><p class="eyebrow">04 / ПРОТОТИПИРОВАНИЕ</p><h2>Проекты в <span>Figma</span></h2><p>Для итоговой сдачи добавь три собственных интерактивных прототипа, в каждом — минимум три связанных экрана.</p></div>
-      <div class="project-grid three">
-        <article class="project-card"><div class="placeholder-art">01</div><div class="project-body"><span class="pill">Проект 1</span><h3>Сайт-портфолио</h3><p>Главная страница, раздел работ и страница контактов.</p><a class="text-button" href="#" aria-label="Добавить ссылку на прототип 1">Ссылка появится после добавления</a></div></article>
-        <article class="project-card"><div class="placeholder-art alt">02</div><div class="project-body"><span class="pill">Проект 2</span><h3>Интернет-магазин</h3><p>Каталог товаров, карточка товара и корзина.</p><a class="text-button" href="#" aria-label="Добавить ссылку на прототип 2">Ссылка появится после добавления</a></div></article>
-        <article class="project-card"><div class="placeholder-art third">03</div><div class="project-body"><span class="pill">Проект 3</span><h3>Мобильное приложение</h3><p>Экран входа, главная страница и профиль пользователя.</p><a class="text-button" href="#" aria-label="Добавить ссылку на прототип 3">Ссылка появится после добавления</a></div></article>
+      <div class="section-heading">
+        <p class="eyebrow">04 / ПРОТОТИПИРОВАНИЕ</p>
+        <h2>Мои проекты в <span>Figma</span></h2>
+        <p>Учебные проекты интерфейсов. Нажми на кнопку, чтобы открыть работу в Figma.</p>
       </div>
+      <div class="project-grid">
+        <article class="project-card figma-card">
+          <div class="project-body">
+            <span class="pill">Проект 01 · Figma Make</span>
+            <h3>Food Delivery</h3>
+            <p>Прототип приложения для просмотра меню и заказа доставки еды.</p>
+            <a class="text-button" href="https://www.figma.com/make/YGvCP7dwBQ1LJeaiKDVnZe/Food-Delivery-Ordering-App?t=hYKYVuRdSzunrpak-1" target="_blank" rel="noopener noreferrer">Открыть задание в Figma ↗</a>
+          </div>
+        </article>
+        <article class="project-card figma-card">
+          <div class="project-body">
+            <span class="pill">Проект 02 · Figma Make</span>
+            <h3>PTK Astana College</h3>
+            <p>Прототип сайта колледжа для представления учебного заведения и информации для посетителей.</p>
+            <a class="text-button" href="https://www.figma.com/make/vGateapTKL1WYJX1v8EpC2/PTK-Astana-College-Website?t=v96a0sLWxyd9qMYS-1" target="_blank" rel="noopener noreferrer">Открыть задание в Figma ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="previous-site">
+      <div class="section-heading"><p class="eyebrow">05 / МОИ САЙТЫ</p><h2>Другие <span>проекты</span></h2><p>Ранее опубликованный учебный сайт.</p></div>
+      <div class="project-grid"><article class="project-card"><div class="placeholder-art third">WEB</div><div class="project-body"><span class="pill">GitHub Pages</span><h3>Мой предыдущий сайт</h3><p>Учебный сайт, опубликованный в интернете.</p><a class="text-button" href="https://bekff282-crypto.github.io/student-portfolo/" target="_blank" rel="noopener noreferrer">Открыть сайт ↗</a></div></article></div>
     </section>
 
     <section class="section" id="uxui">
@@ -121,22 +143,9 @@
         <article class="panel"><h3>JavaScript — интерактивность</h3><p>Переключение светлой и тёмной темы.</p><p>Поиск работ по названию.</p><p>Фильтрация карточек по категориям.</p><p>Модальное окно с подробностями.</p><p>Проверка формы и сообщение об отправке.</p></article>
       </div>
     </section>
+</main>
 
-    <section class="section" id="database">
-      <div class="section-heading"><p class="eyebrow">07 / ХРАНЕНИЕ ДАННЫХ</p><h2>Форма <span>обратной связи</span></h2><p>Демонстрационная форма с проверкой обязательных полей. Пока данные не отправляются в настоящую базу данных.</p></div>
-      <form class="contact-form panel" id="contactForm">
-        <label>Ваше имя *<input name="visitorName" required minlength="2" placeholder="Введите имя"></label>
-        <label>Тема сообщения *<input name="subject" required placeholder="Например, вопрос о проекте"></label>
-        <label>Email (необязательно)<input name="email" type="email" placeholder="example@mail.com"></label>
-        <label>Сообщение *<textarea name="message" required minlength="5" rows="4" placeholder="Напишите сообщение"></textarea></label>
-        <button class="btn primary" type="submit">Проверить форму</button>
-        <p class="form-note" id="formMessage" role="status"></p>
-      </form>
-      <div class="notice"><strong>Для настоящей базы данных:</strong> после публикации подключи Supabase или другой серверный сервис. Не храни пароли и секретные ключи в публичном JavaScript-файле.</div>
-    </section>
-  </main>
-
-  <footer id="contact">
+  <footer>
     <div><a class="logo" href="#home">BB<span>.</span></a><p>Бекзат Баймурзинов · WD-2-135</p></div>
     <p>Учебный проект · 2026</p>
     <a href="#home">Наверх ↑</a>

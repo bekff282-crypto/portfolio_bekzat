@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аналитика успеваемости</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Электронный журнал</h1>
+        <p>Аналитика успеваемости и контроль сроков</p>
+    </header>
+
+    <main>
+        <section class="block">
+            <h2>Список студентов</h2>
+            <div id="studentList"></div>
+        </section>
+
+        <section class="block">
+            <h2>Статистика успеваемости</h2>
+            <button onclick="calculateAverage()">Рассчитать статистику</button>
+            <div id="statistics"></div>
+        </section>
+
+        <section class="block">
+            <h2>Генератор учебных заданий</h2>
+            <button onclick="generateTask()">Сгенерировать задание</button>
+            <div id="taskGenerator"></div>
+        </section>
+
+        <section class="block">
+            <h2>Контроль сроков</h2>
+            <button onclick="checkDeadlines()">Проверить сроки</button>
+            <div id="deadlines"></div>
+        </section>
+
+        <section class="block">
+            <h2>Итоговый отчёт</h2>
+            <button onclick="generateReport()">Сформировать отчёт</button>
+            <div id="report"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Учебный проект JavaScript | Student Analytics</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

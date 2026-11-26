@@ -1,0 +1,139 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1b1035, #492477);
+    color: #222;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #6427a8;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #6427a8;
+    margin-top: 10px;
+}
+
+section {
+    margin-top: 25px;
+    padding: 20px;
+    background: #faf7ff;
+    border-radius: 10px;
+}
+
+input, select {
+    padding: 12px;
+    margin: 6px 3px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+button {
+    padding: 11px 15px;
+    margin: 5px 3px;
+    background: #6427a8;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #492477;
+}
+
+.delete-btn {
+    background: #d83b55;
+}
+
+.delete-btn:hover {
+    background: #a91f36;
+}
+
+.edit-btn {
+    background: #27865c;
+}
+
+.edit-btn:hover {
+    background: #176640;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: #6427a8;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f0e9fa;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+#statistics, #searchResult, #failedStudents,
+#teacherList, #teacherMessage {
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+form input, form select {
+    flex: 1 1 180px;
+}
+
+@media (max-width: 700px) {
+    .container {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 7px 4px;
+    }
+}

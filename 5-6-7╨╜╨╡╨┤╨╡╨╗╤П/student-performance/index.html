@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система оценки успеваемости</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1b1035, #492477);
+            color: #222;
+        }
+
+        .container {
+            max-width: 550px;
+            margin: 30px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            text-align: center;
+            color: #6427a8;
+        }
+
+        h2 {
+            color: #6427a8;
+            margin-top: 25px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px;
+            margin-top: 7px;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            margin-top: 25px;
+            background: #6427a8;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #492477;
+        }
+
+        #result {
+            margin-top: 25px;
+            line-height: 1.7;
+        }
+
+        #result p {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+        }
+
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Система оценки успеваемости</h1>
+
+        <label for="studentName">Имя студента:</label>
+        <input type="text" id="studentName" placeholder="Введите имя">
+
+        <label for="grade1">Оценка 1:</label>
+        <input type="number" id="grade1" placeholder="От 0 до 100">
+
+        <label for="grade2">Оценка 2:</label>
+        <input type="number" id="grade2" placeholder="От 0 до 100">
+
+        <label for="grade3">Оценка 3:</label>
+        <input type="number" id="grade3" placeholder="От 0 до 100">
+
+        <label for="completedTasks">Выполнено заданий:</label>
+        <input type="number" id="completedTasks" placeholder="От 0 до 10">
+
+        <button onclick="checkPerformance()">
+            Проверить успеваемость
+        </button>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

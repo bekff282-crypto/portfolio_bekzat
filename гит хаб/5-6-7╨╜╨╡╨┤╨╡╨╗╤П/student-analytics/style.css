@@ -1,0 +1,94 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1b1035, #392064);
+    color: white;
+    padding: 30px 15px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #d8b4fe;
+}
+
+header p {
+    color: #d1c4e9;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+}
+
+.block {
+    background: #2b1b48;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border: 1px solid #65449b;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #d8b4fe;
+    margin-bottom: 18px;
+}
+
+button {
+    background: #8b5cf6;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 5px 0 12px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #a78bfa;
+    transform: translateY(-2px);
+}
+
+.student {
+    background: #3b2860;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border-left: 4px solid #a78bfa;
+}
+
+.result {
+    background: #3b2860;
+    padding: 15px;
+    margin-top: 12px;
+    border-radius: 8px;
+    line-height: 1.8;
+}
+
+.good {
+    color: #86efac;
+}
+
+.bad {
+    color: #fca5a5;
+}
+
+footer {
+    text-align: center;
+    color: #c4b5fd;
+    margin-top: 30px;
+}

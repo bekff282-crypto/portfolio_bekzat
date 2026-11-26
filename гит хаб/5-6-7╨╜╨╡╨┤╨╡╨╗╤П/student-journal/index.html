@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электронный журнал успеваемости</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1b1035, #492477);
+            color: #222;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            text-align: center;
+            color: #6427a8;
+        }
+
+        h2 {
+            color: #6427a8;
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 12px 18px;
+            margin: 7px 5px 7px 0;
+            background: #6427a8;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        button:hover {
+            background: #492477;
+        }
+
+        input {
+            padding: 12px;
+            width: 180px;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+            font-size: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background: #6427a8;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f3edfa;
+        }
+
+        .success {
+            color: green;
+            font-weight: bold;
+        }
+
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+
+        .section {
+            margin-top: 25px;
+            padding: 15px;
+            background: #faf7ff;
+            border-radius: 10px;
+        }
+
+        #statistics, #searchResult, #firstFailed, #passedStudents {
+            line-height: 1.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Электронный журнал успеваемости</h1>
+
+        <div class="section">
+            <h2>Список студентов</h2>
+
+            <button onclick="showJournal()">Показать журнал</button>
+
+            <div id="studentList"></div>
+        </div>
+
+        <div class="section">
+            <h2>Общая статистика</h2>
+
+            <button onclick="calculateStatistics()">Рассчитать статистику</button>
+
+            <div id="statistics"></div>
+        </div>
+
+        <div class="section">
+            <h2>Поиск студента</h2>
+
+            <input type="number" id="studentNumber"
+                   placeholder="Номер от 1 до 8">
+
+            <button onclick="searchStudent()">Найти студента</button>
+
+            <div id="searchResult"></div>
+        </div>
+
+        <div class="section">
+            <h2>Первая неудовлетворительная оценка</h2>
+
+            <div id="firstFailed"></div>
+        </div>
+
+        <div class="section">
+            <h2>Студенты, сдавшие предмет</h2>
+
+            <div id="passedStudents"></div>
+        </div>
+
+        <div class="section">
+            <h2>Исправление оценки</h2>
+
+            <p>Можно исправить оценку первого студента, не набравшего 50 баллов.</p>
+
+            <button onclick="correctGrade()">Исправить оценку</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обработка строк студентов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Обработка текстовых данных</h1>
+        <p class="subtitle">Электронный журнал успеваемости</p>
+
+        <section>
+            <h2>Обработка информации студента</h2>
+
+            <input type="text" id="fullName" placeholder="Введите ФИО">
+            <input type="text" id="groupInput" placeholder="Введите группу">
+            <input type="email" id="emailInput" placeholder="Введите Email">
+
+            <button id="processButton">Обработать данные</button>
+
+            <div id="result"></div>
+        </section>
+
+        <section>
+            <h2>Поиск студента</h2>
+
+            <input type="text" id="searchInput" placeholder="Введите имя для поиска">
+
+            <button type="button" onclick="searchStudent()">
+                Найти студента
+            </button>
+
+            <div id="searchResult"></div>
+        </section>
+
+        <section>
+            <h2>Список студентов</h2>
+
+            <div id="studentList"></div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:linear-gradient(135deg,#100b20,#21143b 55%,#321d50);color:#f4efff;line-height:1.7}
+header{background:linear-gradient(135deg,#1b1035,#49266f);color:white;padding:30px 6%;box-shadow:0 4px 15px #0004}
+header h1{font-size:30px;margin-bottom:8px}header p{color:#ddccf5;margin:8px 0}
+nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+nav a{color:white;text-decoration:none;font-weight:bold;padding:9px 15px;border-radius:20px;background:#352451;transition:.2s}
+nav a:hover{background:#67439a}
+.container{max-width:1150px;margin:35px auto;padding:0 20px}
+section{margin-bottom:35px}section>h2{font-size:26px;color:#dfc7ff;margin:0 0 20px}
+.hero{background:linear-gradient(135deg,#382454,#281a40);padding:35px;border-radius:18px;border:1px solid #684b8e;margin-bottom:35px}
+.hero h2{color:#eadbff;font-size:28px;margin-bottom:15px}.hero p{margin-bottom:15px}
+.button{display:inline-block;margin-top:12px;padding:12px 24px;background:#8055b5;color:white;text-decoration:none;border-radius:9px;font-weight:bold}
+.button:hover{background:#9b70d0}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.card{background:#211833;padding:25px;border-radius:14px;border:1px solid #493568;box-shadow:0 5px 18px #0003;margin-bottom:20px;transition:.2s}
+.card:hover{transform:translateY(-3px)}.card h3{color:#ddc5ff;font-size:20px;margin-bottom:10px}.card p{margin-bottom:12px}
+.card a{color:#d8baff;font-weight:bold;text-decoration:none}.card a:hover{text-decoration:underline}
+.card ol,.hero ul{padding-left:25px}.card li,.hero li{margin-bottom:8px}
+table{width:100%;border-collapse:collapse;background:#211833;margin-top:20px;display:block;overflow-x:auto}
+th,td{border:1px solid #594174;padding:12px;text-align:left;min-width:140px}
+th{background:#4b306b;color:white}tr:nth-child(even){background:#2a1e40}td{line-height:1.5}
+footer{background:#160f28;color:#c7badd;text-align:center;padding:22px;margin-top:40px}
+@media(max-width:700px){header h1{font-size:24px}nav{gap:5px}.cards{grid-template-columns:1fr}.hero{padding:22px}.container{padding:0 14px}section>h2,.hero h2{font-size:23px}}
